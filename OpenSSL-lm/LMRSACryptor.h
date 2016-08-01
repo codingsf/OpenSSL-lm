@@ -19,9 +19,9 @@
 #include <openssl/err.h>
 
 
-RSA* loadPUBLICKeyFromString(const char* publicKeyStr);
+RSA* loadPUBLICKeyFromString( const char* publicKeyStr );
 
-RSA* loadPRIVATEKeyFromString(const char* privateKeyStr);
+RSA* loadPRIVATEKeyFromString( const char* privateKeyStr );
 
 unsigned char* public_encrypt( RSA *pubKey, const unsigned char* str, int dataSize, int *resultLen );
 
